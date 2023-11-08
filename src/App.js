@@ -21,12 +21,12 @@ function App() {
       <Header />
       <div className="section__line"></div>
       <FestSection />
-      {/* <div className="section__line"></div> */}
-      {/* <NewsSection /> */}
-      {/* <div className="section__line"></div> */}
-      {/* <FilmSection /> */}
-      {/* <div className="section__line"></div> */}
-      {/* <WatchedFilm /> */}
+      <div className="section__line"></div>
+      <NewsSection />
+      <div className="section__line"></div>
+      <FilmSection />
+      <div className="section__line"></div>
+      <WatchedFilm />
       {/* <div className="section__line"></div> */}
       {/* <ActiorsSection /> */}
       {/* <div className="section__line"></div> */}

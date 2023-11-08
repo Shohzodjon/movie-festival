@@ -17,7 +17,7 @@
 }
 body {
   width: 100vw;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 html {
   font-size: 62.5%;
@@ -102,7 +102,7 @@ h2 {
     font-size: 55%;
   }
   .container {
-    padding: 0 15px;
+    padding: 0 16px;
   }
   a {
     line-height: 20px;
@@ -122,7 +122,7 @@ h2 {
     font-size: 60%;
   }
   .container {
-    padding: 0 15px;
+    padding: 0 16px;
   }
 }
 
@@ -131,7 +131,7 @@ h2 {
     font-size: 62%;
   }
   .container {
-    padding: 0 15px;
+    padding: 0 16px;
   }
 }
 @media screen and (min-width: 1201px) and (max-width: 1408px) {
@@ -139,6 +139,6 @@ h2 {
     font-size: 62.5%;
   }
   .container {
-    padding: 0 15px;
+    padding: 0 16px;
   }
 }

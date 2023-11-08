@@ -28,3 +28,16 @@
   stroke: var(--clr-primary);
   transform: rotate(0deg);
 }
+
+@media screen and (min-width: 375px) and (max-width: 576px) {
+  .title__wrapp h2 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .title__wrapp h2 {
+    font-size: 26px;
+    line-height: 32px;
+  }
+}

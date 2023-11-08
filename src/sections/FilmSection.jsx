@@ -48,6 +48,32 @@ const FilmSection = () => {
             spaceBetween={24}
             slidesPerView={5}
             navigation
+            breakpoints={{
+              375: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+              },
+              576: {
+                slidesPerView: 2,
+                spaceBetween: 15,
+              },
+              768: {
+                slidesPerView: 3,
+                spaceBetween: 25,
+              },
+              992: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+              },
+              1200: {
+                slidesPerView: 4,
+                spaceBetween: 20,
+              },
+              1300: {
+                slidesPerView: 5,
+                spaceBetween: 24,
+              },
+            }}
           >
             {data.map((item, i) => {
               return (

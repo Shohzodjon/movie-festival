@@ -47,11 +47,14 @@
 }
 .fest__img {
   max-width: 310px;
-  max-height: 264px;
+  max-height: 300px;
+  width: 100%;
 }
 .fest__img img {
   width: 100%;
   height: 100%;
+  max-width: 280px;
+  max-height: 280px;
 }
 
 /*  media query  */
@@ -59,7 +62,7 @@
 @media screen and (min-width: 375px) and (max-width: 576px) {
   .fest__section {
     padding: 56px 0 52px;
-    overflow-x:hidden !important;
+    overflow-x: hidden !important;
   }
   .section__img__one,
   .section__img__two,
@@ -101,13 +104,14 @@
 @media screen and (min-width: 577px) and (max-width: 768px) {
   .fest__section {
     padding: 58px 0;
-    overflow-x:hidden !important;
+    overflow-x: hidden !important;
   }
   .section__img__one,
   .section__img__two,
   .section__img__three {
     width: 100%;
-    height: auto;
+    height: 40%;
+    top: 4%;
   }
   .fest__section h2 {
     margin-bottom: 40px;
@@ -142,13 +146,14 @@
 @media screen and (min-width: 769px) and (max-width: 992px) {
   .fest__section {
     padding: 65px 0;
-    overflow-x:hidden !important;
+    overflow-x: hidden !important;
   }
   .section__img__one,
   .section__img__two,
   .section__img__three {
     width: 100%;
-    height: auto;
+    height: 50%;
+    top: 30%;
   }
   .fest__flex {
     margin-top: 30px;
@@ -172,15 +177,65 @@
   .fest__img img {
     width: 100%;
     height: 100%;
-    max-width: 180px;
-    max-height: 160px;
+    max-width: 200px;
+    max-height: 180px;
   }
 }
 
 @media screen and (min-width: 993px) and (max-width: 1200px) {
+  .fest__section {
+    padding: 70px 0;
+    overflow-x: hidden !important;
+  }
+  .section__img__one,
+  .section__img__two,
+  .section__img__three {
+    width: 100%;
+    height: 50%;
+    top: 30%;
+  }
+  .fest__flex {
+    margin-top: 40px;
+    gap: 28px;
+    flex-direction: row;
+    align-items: center;
+  }
 
+  .fest__img {
+    width: 100%;
+    max-width: 100%;
+    max-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .fest__img img {
+    width: 100%;
+    height: 100%;
+    max-width: 250px;
+    max-height: 280px;
+  }
 }
-
 @media screen and (min-width: 1201px) and (max-width: 1340px) {
- 
+  .fest__flex {
+    gap: 28px;
+    justify-content: flex-start;
+  }
+  .fest__flex p {
+    max-width: 45%;
+  }
+  .fest__img {
+    width: 100%;
+    max-width: 100%;
+    max-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .fest__img img {
+    width: 100%;
+    height: 100%;
+    max-width: 280px;
+    max-height: 270px;
+  }
 }
