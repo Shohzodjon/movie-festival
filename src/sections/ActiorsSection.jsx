@@ -31,6 +31,18 @@ const ActiorsSection = () => {
       img: img,
       desc: "Гульбара Толомушова",
     },
+    {
+      img: img,
+      desc: "Гульбара Толомушова",
+    },
+    {
+      img: img,
+      desc: "Гульбара Толомушова",
+    },
+    {
+      img: img,
+      desc: "Гульбара Толомушова",
+    },
   ];
   return (
     <section className="actiors__section">
@@ -55,6 +67,34 @@ const ActiorsSection = () => {
             spaceBetween={45}
             slidesPerView={4}
             navigation
+            centeredSlides={true}
+            loop={true}
+            breakpoints={{
+              375: {
+                slidesPerView: 2,
+                spaceBetween: 10,
+              },
+              576: {
+                slidesPerView: 2,
+                spaceBetween: 15,
+              },
+              768: {
+                slidesPerView: 3,
+                spaceBetween: 25,
+              },
+              992: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+              },
+              1050: {
+                slidesPerView: 4,
+                spaceBetween: 20,
+              },
+              1300: {
+                slidesPerView: 4,
+                spaceBetween: 24,
+              },
+            }}
           >
             {data.map((item, i) => {
               return (

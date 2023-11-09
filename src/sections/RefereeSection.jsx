@@ -15,6 +15,10 @@ const RefereeSection = () => {
     { img: img, name: "Жораев Темур" },
     { img: img, name: "Жораев Темур" },
     { img: img, name: "Жораев Темур" },
+    { img: img, name: "Жораев Темур" },
+    { img: img, name: "Жораев Темур" },
+    { img: img, name: "Жораев Темур" },
+    { img: img, name: "Жораев Темур" },
   ];
 
   return (
@@ -22,6 +26,12 @@ const RefereeSection = () => {
       <div className="container">
         <div className="history__section__flex">
           <SectionTitle title="Жюри" />
+          <select className="referee__select">
+            <option value="1">Алжирская Народная Демократи...</option>
+            <option value="1">Lorem, ipsum dolor.</option>
+            <option value="1">Lorem ipsum dolor sit amet.</option>
+            <option value="1">Lorem ipsum dolor sit amet.</option>
+          </select>
         </div>
 
         <div className="referee__section__slider">
@@ -30,6 +40,34 @@ const RefereeSection = () => {
             spaceBetween={24}
             slidesPerView={4}
             navigation
+            centeredSlides={true}
+            loop={true}
+            breakpoints={{
+              375: {
+                slidesPerView: 2,
+                spaceBetween: 10,
+              },
+              576: {
+                slidesPerView: 2,
+                spaceBetween: 15,
+              },
+              768: {
+                slidesPerView: 3,
+                spaceBetween: 25,
+              },
+              992: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+              },
+              1050: {
+                slidesPerView: 4,
+                spaceBetween: 20,
+              },
+              1300: {
+                slidesPerView: 4,
+                spaceBetween: 24,
+              },
+            }}
           >
             {data.map((item, i) => {
               return (

@@ -65,7 +65,7 @@ const FilmSection = () => {
                 slidesPerView: 3,
                 spaceBetween: 20,
               },
-              1200: {
+              1050: {
                 slidesPerView: 4,
                 spaceBetween: 20,
               },

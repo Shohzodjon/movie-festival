@@ -2,3 +2,50 @@
   padding: 14rem 0;
   background: var(--clr-black-dark);
 }
+.referee__select {
+  display: none;
+}
+
+/*  375px , 576px,  768px, 992px, and 1200px */
+
+@media screen and (min-width: 375px) and (max-width: 576px) {
+  .referee__section {
+    padding: 52px 0;
+  }
+  .referee__select {
+    display: block;
+    width: 358px !important;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768.9px) {
+  .referee__section {
+    padding: 60px 0;
+  }
+  .referee__select {
+    display: block;
+    width: 340px !important;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .referee__section {
+    padding: 80px 0;
+  }
+  .referee__select {
+    display: block;
+    width: 340px !important;
+  }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+  .referee__section {
+    padding: 100px 0;
+  }
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1300px) {
+  .referee__section {
+    padding: 120px 0;
+  }
+}

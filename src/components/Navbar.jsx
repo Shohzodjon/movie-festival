@@ -75,24 +75,12 @@ const Navbar = () => {
                 <YouTube />
               </a>
             </li>
-            <li className="change__language">
-              <p onClick={(e) => handleClick(e)}>
-                Ru <ArrowIcon />
-              </p>
-              <div className="language__drop">
-                <button
-                  onClick={(e) => handleClick(e)}
-                  className={active ? "unactive__btn" : ""}
-                >
-                  Uz
-                </button>
-                <button
-                  onClick={(e) => handleClick(e)}
-                  className={active ? "unactive__btn" : ""}
-                >
-                  Eng
-                </button>
-              </div>
+            <li>
+              <select>
+                <option value="ru">Ru</option>
+                <option value="uz">Uz</option>
+                <option value="en">En</option>
+              </select>
             </li>
           </ul>
           <div className="navbar__menu">
@@ -135,25 +123,7 @@ const Navbar = () => {
                 <a href="#">Локации</a>
                 <span className="res__nav__underline"></span>
               </li>
-              <li className="res__change__language">
-                <p onClick={(e) => handleClick(e)}>
-                  Ru <ArrowIcon />
-                </p>
-                <div className="res__language__drop">
-                  <button
-                    onClick={(e) => handleClick(e)}
-                    className={active ? "unactive__btn" : ""}
-                  >
-                    Uz
-                  </button>
-                  <button
-                    onClick={(e) => handleClick(e)}
-                    className={active ? "unactive__btn" : ""}
-                  >
-                    Eng
-                  </button>
-                </div>
-              </li>
+              <li className="res__change__language"></li>
             </ul>
             <ul className="res__nav__social">
               <li className="res__social__link">
@@ -185,3 +155,23 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+{
+  /* <p onClick={(e) => handleClick(e)}>
+                Ru <ArrowIcon />
+              </p>
+              <div className="language__drop">
+                <button
+                  onClick={(e) => handleClick(e)}
+                  className={active ? "unactive__btn" : ""}
+                >
+                  Uz
+                </button>
+                <button
+                  onClick={(e) => handleClick(e)}
+                  className={active ? "unactive__btn" : ""}
+                >
+                  Eng
+                </button>
+              </div> */
+}

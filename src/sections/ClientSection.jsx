@@ -5,18 +5,31 @@ import "swiper/css/navigation";
 import "swiper/css";
 import img from "../assets/images/client-img.png";
 import img2 from "../assets/images/client-img2.png";
+import img3 from "../assets/images/client-img3.png";
+import img4 from "../assets/images/client-img4.png";
 import "../assets/styles/client-section.css";
+import Marquee from "react-fast-marquee";
 const ClientSection = () => {
-  const data = [img, img2, img, img2, img, img2, img, img2, img, img2];
+  const data = [img, img2, img3, img4, img, img2, img3, img4, img, img2];
   return (
     <section className="client__section">
       <div className="container">
         <div className="section__header__flex">
           <SectionTitle title="Наши партнеры" />
         </div>
-
         <div className="client__slider">
-          <Swiper
+          <Marquee pauseOnHover={true}>
+            {data.map((item, i) => {
+              return (
+                <div key={i} className="client__card">
+                  <img src={item} alt="img " />
+                </div>
+              );
+            })}
+          </Marquee>
+        </div>
+
+        {/* <Swiper
             modules={[Navigation, Pagination, Scrollbar, A11y]}
             spaceBetween={24}
             slidesPerView={7}
@@ -31,8 +44,7 @@ const ClientSection = () => {
                 </SwiperSlide>
               );
             })}
-          </Swiper>
-        </div>
+          </Swiper> */}
       </div>
     </section>
   );

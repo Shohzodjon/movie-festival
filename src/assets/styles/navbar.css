@@ -1,7 +1,7 @@
 nav {
   background: var(--clr-black-dark);
   padding: 2.4rem 0;
-  width: 100vw;
+  width: 100%;
   position: sticky;
   top: 0;
   z-index: 99999;
@@ -59,6 +59,16 @@ nav {
   align-items: center;
   gap: 20px;
 }
+.nav__social select {
+  padding: 6px 10px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  color: var(--clr-grey-1);
+  border-radius: 8px;
+  border: 1px solid #c7c7c7;
+  background: #111;
+}
 .close__icon {
   position: absolute;
   top: 20px;
@@ -70,57 +80,7 @@ nav {
 .social__link:hover svg path {
   stroke: var(--clr-primary);
 }
-.change__language {
-  position: relative;
-  border-top: 1px solid var(--clr-grey-1);
-  border-right: 1px solid var(--clr-grey-1);
-  border-left: 1px solid var(--clr-grey-1);
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  width: 83px;
-  padding: 6px 12px;
-}
-.change__language p {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  cursor: pointer;
-  font-size: 18px;
-  color: var(--clr-grey-3);
-  font-style: normal;
-  font-weight: 600;
-  line-height: 24px;
-}
 
-.language__drop {
-  position: absolute;
-  top: 36px;
-  left: -0.6px;
-  width: 102%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  border-right: 1px solid var(--clr-grey-1);
-  border-left: 1px solid var(--clr-grey-1);
-  border-bottom: 1px solid var(--clr-grey-1);
-  gap: 5px;
-  padding-bottom: 5px;
-  border-bottom-left-radius: 9px;
-  border-bottom-right-radius: 9px;
-}
-.language__drop button {
-  background: none;
-  border: none;
-  font-size: 18px;
-  color: var(--clr-grey-3);
-  font-style: normal;
-  font-weight: 600;
-  line-height: 24px;
-  cursor: pointer;
-  transition: var(--transition);
-  opacity: 0;
-  display: none;
-}
 .change__language:hover button {
   opacity: 1;
   display: block;

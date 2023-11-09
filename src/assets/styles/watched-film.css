@@ -1,7 +1,6 @@
 .watched__film__section {
   background: var(--clr-black-dark);
   padding: 140px 0;
-  width: 100%;
   overflow-x: hidden;
 }
 .watched__film__flex {
@@ -48,7 +47,7 @@
 
   .watched__film__flex select {
     font-size: 14px;
-    line-height: 24px;
+    line-height: 20px;
     padding: 10px;
   }
 
@@ -63,7 +62,7 @@
 }
 @media screen and (min-width: 451px) and (max-width: 576px) {
   .watched__film__section {
-    padding: 56px 0;
+    padding: 60px 0;
   }
   .watched__film__flex {
     align-items: flex-start;
@@ -74,40 +73,37 @@
 
   .watched__film__flex select {
     font-size: 14px;
-    line-height: 24px;
+    line-height: 22px;
     padding: 10px;
   }
 
   .watched__film__card {
     width: 100%;
     max-width: 240px;
-    height: 234px;
+    height: 245px;
     border-radius: 4px;
     overflow: hidden;
     margin: 0 auto;
   }
 }
-@media screen and (min-width: 577px) and (max-width: 768px) {
+@media screen and (min-width: 577px) and (max-width: 768.9px) {
   .watched__film__section {
-    padding: 56px 0;
+    padding: 65px 0;
   }
   .watched__film__flex {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 40px;
-    margin-bottom: 24px;
+    margin-bottom: 35px;
   }
 
   .watched__film__flex select {
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 13px;
+    line-height: 20px;
     padding: 10px;
   }
 
   .watched__film__card {
     width: 100%;
-    max-width: 240px;
-    height: 234px;
+    max-width: 320px;
+    height: auto;
     border-radius: 4px;
     overflow: hidden;
     margin: 0 auto;
@@ -115,7 +111,84 @@
 }
 
 @media screen and (min-width: 769px) and (max-width: 992px) {
+  .watched__film__section {
+    padding: 70px 0;
+  }
+  .watched__film__flex {
+    margin-bottom: 40px;
+  }
+
+  .watched__film__flex select {
+    font-size: 14px;
+    line-height: 22px;
+    padding: 10px;
+  }
+
+  .watched__film__card {
+    width: 100%;
+    max-width: 290px;
+    height: auto;
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 0 auto;
+  }
 }
 
-@media screen and (min-width: 993px) and (max-width: 1200px) {
+@media screen and (min-width: 993px) and (max-width: 1049.9px) {
+  .watched__film__section {
+    padding: 90px 0;
+  }
+
+  .watched__film__flex select {
+    padding: 11px;
+  }
+
+  .watched__film__card {
+    width: 100%;
+    max-width: 310px;
+    height: 340px;
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1050px) and (max-width: 1200px) {
+  .watched__film__section {
+    padding: 100px 0;
+  }
+  .watched__film__flex select {
+    padding: 11px;
+  }
+  .watched__film__card {
+    width: 100%;
+    max-width: 310px;
+    height: 340px;
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1201px) and (max-width: 1300px) {
+  .watched__film__section {
+    padding: 100px 0;
+  }
+
+  .watched__film__card {
+    width: 100%;
+    max-width: 310px;
+    height: 340px;
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1301px) {
+  .watched__film__card {
+    width: 100%;
+    max-width: 320px;
+    height: 350px;
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 0 auto;
+  }
 }

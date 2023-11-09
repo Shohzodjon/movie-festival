@@ -39,8 +39,8 @@ const WatchedFilm = () => {
                 slidesPerView: 3,
                 spaceBetween: 25,
               },
-              992: {
-                slidesPerView: 3,
+              1040: {
+                slidesPerView: 4,
                 spaceBetween: 20,
               },
               1200: {

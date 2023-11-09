@@ -16,7 +16,7 @@ import ClientSection from "./sections/ClientSection";
 import ContactSection from "./sections/ContactSection";
 function App() {
   return (
-    <section>
+    <section className="app__component">
       <Navbar />
       <Header />
       <div className="section__line"></div>
@@ -27,28 +27,28 @@ function App() {
       <FilmSection />
       <div className="section__line"></div>
       <WatchedFilm />
-      {/* <div className="section__line"></div> */}
-      {/* <ActiorsSection /> */}
-      {/* <div className="section__line"></div> */}
-      {/* <ProgrammSection /> */}
-      {/* <div className="section__line"></div> */}
-      {/* <MediaSection /> */}
-      {/* <div className="section__line"></div> */}
-      {/* <PrimerySection /> */}
-      {/* <div className="section__line"></div> */}
-      {/* <ActiorsSection /> */}
-      {/* <div className="section__line"></div> */}
-      {/* <HistorySection /> */}
-      {/* <div className="section__line"></div> */}
-      {/* <MasterClass /> */}
-      {/* <div className="section__line"></div> */}
-      {/* <RefereeSection /> */}
-      {/* <div className="section__line"></div> */}
-      {/* <LocationSection /> */}
-      {/* <div className="section__line"></div> */}
-      {/* <ClientSection /> */}
-      {/* <div className="section__line"></div> */}
-      {/* <ContactSection /> */}
+      <div className="section__line"></div>
+      <ActiorsSection />
+      <div className="section__line"></div>
+      <ProgrammSection />
+      <div className="section__line"></div>
+      <MediaSection />
+      <div className="section__line"></div>
+      <PrimerySection />
+      <div className="section__line"></div>
+      <ActiorsSection />
+      <div className="section__line"></div>
+      <HistorySection />
+      <div className="section__line"></div>
+      <MasterClass />
+      <div className="section__line"></div>
+      <RefereeSection />
+      <div className="section__line"></div>
+      <LocationSection />
+      <div className="section__line"></div>
+      <ClientSection />
+      <div className="section__line"></div>
+      <ContactSection />
     </section>
   );
 }

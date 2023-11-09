@@ -22,3 +22,94 @@
   color: #fff;
   top: 366px;
 }
+
+/*  375px , 576px,  768px, 992px, and 1200px */
+
+@media screen and (min-width: 375px) and (max-width: 576px) {
+  .actiors__card {
+    width: 100%;
+    max-width: 350px;
+    height: 400px;
+    margin: 0 auto;
+  }
+
+  .actiors__card span {
+    font-size: 16px;
+    line-height: 24px;
+    top: 340px;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .actiors__card {
+    width: 100%;
+    max-width: 350px;
+    height: 400px;
+    margin: 0 auto;
+  }
+
+  .actiors__card span {
+    font-size: 16px;
+    line-height: 24px;
+    top: 340px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .actiors__card {
+    width: 100%;
+    max-width: 350px;
+    height: 400px;
+    margin: 0 auto;
+  }
+
+  .actiors__card span {
+    font-size: 16px;
+    line-height: 24px;
+    top: 340px;
+  }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1049.9px) {
+  .actiors__card {
+    width: 100%;
+    max-width: 350px;
+    height: 430px;
+    margin: 0 auto;
+  }
+
+  .actiors__card span {
+    font-size: 16px;
+    line-height: 24px;
+    top: 360px;
+  }
+}
+@media screen and (min-width: 1050px) and (max-width: 1200px) {
+  .actiors__card {
+    width: 100%;
+    max-width: 300px;
+    /* height: 430px; */
+    margin: 0 auto;
+  }
+
+  .actiors__card span {
+    font-size: 17px;
+    line-height: 24px;
+    top: 370px;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .actiors__card {
+    width: 100%;
+    max-width: 300px;
+    /* height: 430px; */
+    margin: 0 auto;
+  }
+
+  .actiors__card span {
+    font-size: 17px;
+    line-height: 24px;
+    top: 370px;
+  }
+}

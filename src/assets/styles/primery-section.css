@@ -6,3 +6,42 @@
 .primery__section__slider {
   margin-top: 6.4rem;
 }
+
+/*  375px , 576px,  768px, 992px, and 1200px */
+
+@media screen and (min-width: 375px) and (max-width: 576px) {
+  .primery__section {
+    padding: 52px 0;
+  }
+
+  .primery__section__slider {
+    margin-top: 3rem;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768.9px) {
+  .primery__section {
+    padding: 60px 0;
+  }
+  .primery__section__slider {
+    margin-top: 3.5rem;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .primery__section {
+    padding: 70px 0;
+  }
+  .primery__section__slider {
+    margin-top: 3.5rem;
+  }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+  .primery__section {
+    padding: 80px 0;
+  }
+  .primery__section__slider {
+    margin-top: 4.5rem;
+  }
+}

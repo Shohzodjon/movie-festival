@@ -51,3 +51,92 @@
 .card__bottom__flex svg path {
   stroke: var(--clr-primary);
 }
+
+/*  375px , 576px,  768px, 992px, and 1200px */
+
+@media screen and (min-width: 375px) and (max-width: 576px) {
+  .programm__card {
+    padding: 24px;
+  }
+  .card__title {
+    margin-bottom: 16px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .programm__card__flex {
+    align-items: center;
+  }
+  .programm__card__flex p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .programm__card__flex span {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .card__line {
+    margin: 16px 0;
+  }
+  .card__bottom__flex {
+    align-items: center;
+  }
+  .card__bottom__flex p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768.9px) {
+  .programm__card {
+    padding: 20px;
+  }
+  .card__title {
+    margin-bottom: 16px;
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .programm__card__flex p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .programm__card__flex span {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .card__bottom__flex p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .programm__card {
+    padding: 20px;
+  }
+  .card__title {
+    margin-bottom: 16px;
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .programm__card__flex p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .programm__card__flex span {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .card__bottom__flex p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+/*
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1300px) {
+} */

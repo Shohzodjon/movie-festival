@@ -3,6 +3,7 @@ import shape1 from "../assets/images/shape1.png";
 import shape2 from "../assets/images/shape2.png";
 import shape3 from "../assets/images/shape3.png";
 import SectionTitle from "../components/SectionTitle";
+import "../assets/styles/contact-section.css";
 const ContactSection = () => {
   return (
     <section className="contact__section">
@@ -13,8 +14,8 @@ const ContactSection = () => {
         <div className="section__header__flex">
           <SectionTitle title="Контакты" />
         </div>
-        <footer>
-          <ul>
+        <footer className="footer">
+          <ul className="footer__list">
             <li>
               <h5>Телефоны:</h5>
             </li>
@@ -25,13 +26,15 @@ const ContactSection = () => {
               <a href="+998 99 999 99 99">+998 99 999 99 99</a>
             </li>
           </ul>
-          <ul>
+          <ul className="footer__list">
             <li>
               <h5>Эл.почта:</h5>
             </li>
-            <li>@Tiffest123.@gmail.com</li>
+            <li>
+              <a href="">@Tiffest123.@gmail.com</a>
+            </li>
           </ul>
-          <ul>
+          <ul className="footer__list">
             <li>
               <h5>Соц. сеть:</h5>
             </li>
@@ -60,7 +63,7 @@ const ContactSection = () => {
               </a>
             </li>
           </ul>
-          <ul>
+          <ul className="footer__list">
             <li>
               <h5>Адрес:</h5>
             </li>

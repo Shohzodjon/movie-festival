@@ -19,6 +19,28 @@ const PrimerySection = () => {
             spaceBetween={24}
             slidesPerView={4}
             navigation
+            breakpoints={{
+              375: {
+                slidesPerView: 2,
+                spaceBetween: 10,
+              },
+              576: {
+                slidesPerView: 2,
+                spaceBetween: 15,
+              },
+              768: {
+                slidesPerView: 3,
+                spaceBetween: 25,
+              },
+              1040: {
+                slidesPerView: 4,
+                spaceBetween: 20,
+              },
+              1200: {
+                slidesPerView: 4,
+                spaceBetween: 20,
+              },
+            }}
           >
             {data.map((item, i) => {
               return (
