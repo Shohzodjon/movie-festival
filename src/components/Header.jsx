@@ -1,6 +1,5 @@
 import award from "../assets/images/award.png";
 import year from "../assets/images/year.png";
-import bgImg from "../assets/images/bg_img.png";
 import "../assets/styles/header.css";
 const Header = () => {
   return (

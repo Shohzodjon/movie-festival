@@ -1,4 +1,3 @@
-import { useState } from "react";
 import {
   ArrowIcon,
   FacebookIcon,
@@ -11,12 +10,6 @@ import {
 import logo from "../assets/images/logo.png";
 import "../assets/styles/navbar.css";
 const Navbar = () => {
-  const [active, setActive] = useState(true);
-
-  const handleClick = (e) => {
-    setActive((e) => !e);
-  };
-
   return (
     <nav>
       <div className="container">

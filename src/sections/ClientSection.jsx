@@ -1,6 +1,6 @@
 import SectionTitle from "../components/SectionTitle";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+// import { Swiper, SwiperSlide } from "swiper/react";
+// import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 import "swiper/css/navigation";
 import "swiper/css";
 import img from "../assets/images/client-img.png";
