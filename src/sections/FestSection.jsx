@@ -3,9 +3,16 @@ import "../assets/styles/fest.css";
 import shape1 from "../assets/images/shape1.png";
 import shape2 from "../assets/images/shape2.png";
 import shape3 from "../assets/images/shape3.png";
+import { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 const FestSection = () => {
+  useEffect(() => {
+    AOS.init();
+  }, [])
   return (
-    <section className="fest__section">
+    <section className="fest__section" data-aos="fade-right" data-aos-delay="200" data-aos-easing="linear" data-aos-duration="1200">
       <img src={shape1} alt="shape 1" className="section__img__one" />
       <img src={shape2} alt="shape 2" className="section__img__two" />
       <img src={shape3} alt="shape 3" className="section__img__three" />

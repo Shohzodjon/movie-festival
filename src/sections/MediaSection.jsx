@@ -5,9 +5,22 @@ import shape1 from "../assets/images/shape1.png";
 import shape2 from "../assets/images/shape2.png";
 import shape3 from "../assets/images/shape3.png";
 import "../assets/styles/media-section.css";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 const MediaSection = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
-    <section className="media__section">
+    <section
+      className="media__section"
+      id="media"
+      data-aos="flip-right"
+      data-aos-easing="linear"
+      data-aos-duration="1000"
+    >
       <img src={shape1} alt="shape 1" className="section__img__one" />
       <img src={shape2} alt="shape 2" className="section__img__two" />
       <img src={shape3} alt="shape 3" className="section__img__three" />

@@ -9,10 +9,16 @@ import shape2 from "../assets/images/shape2.png";
 import shape3 from "../assets/images/shape3.png";
 import "../assets/styles/film-section.css";
 import img from "../assets/images/card_img.png";
+import { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const FilmSection = () => {
+  useEffect(() => {
+    AOS.init();
+  }, [])
   const data = [img, img, img, img, img, img];
   return (
-    <section className="film__section">
+    <section className="film__section"  data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-easing="linear" data-aos-duration="1200">
       <img src={shape1} alt="shape 1" className="section__img__one" />
       <img src={shape2} alt="shape 2" className="section__img__two" />
       <img src={shape3} alt="shape 3" className="section__img__three" />
@@ -22,7 +28,7 @@ const FilmSection = () => {
           <button>Оставить заявку</button>
         </div>
 
-        <h4>Кино за 5 дней</h4>
+        <h4 >Кино за 5 дней</h4>
         <div className="film__section__line"></div>
         <p>
           ЭТО ОСНОВНАЯ ПРОГРАММА МОЛОДЁЖНОГО КИНОФЕСТИВАЛЯ, КОТОРАЯ ПРОЙДЁТ В
@@ -78,7 +84,7 @@ const FilmSection = () => {
             {data.map((item, i) => {
               return (
                 <SwiperSlide key={i}>
-                  <div className="film__img">
+                  <div className="film__img" >
                     <img src={item} alt=" img" />
                   </div>
                 </SwiperSlide>

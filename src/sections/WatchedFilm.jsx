@@ -8,7 +8,14 @@ import img from "../assets/images/card_img.png";
 const WatchedFilm = () => {
   const data = [img, img, img, img, img, img];
   return (
-    <section className="watched__film__section">
+    <section
+      className="watched__film__section"
+      id="cinema"
+      data-aos="zoom-out-right"
+      data-aos-delay="300"
+      data-aos-easing="linear"
+      data-aos-duration="1200"
+    >
       <div className="container">
         <div className="watched__film__flex">
           <SectionTitle title="Кинопоказы" />

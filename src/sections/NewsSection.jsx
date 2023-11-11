@@ -6,7 +6,14 @@ import "swiper/css/navigation";
 import "swiper/css";
 import img from "../assets/images/news_card.png";
 import "../assets/styles/news-section.css";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const NewsSection = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   const data = [
     {
       img: img,
@@ -30,7 +37,14 @@ const NewsSection = () => {
     },
   ];
   return (
-    <section className="news__section">
+    <section
+      className="news__section"
+      data-aos="zoom-in-down"
+      id="news"
+      data-aos-delay="300"
+      data-aos-easing="linear"
+      data-aos-duration="1200"
+    >
       <div className="container">
         <SectionTitle title="Новости" />
         <div className="news__slider">

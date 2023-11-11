@@ -4,9 +4,22 @@ import shape1 from "../assets/images/shape1.png";
 import shape2 from "../assets/images/shape2.png";
 import shape3 from "../assets/images/shape3.png";
 import "../assets/styles/location-section.css";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 const LocationSection = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
-    <section className="location__section">
+    <section
+      className="location__section"
+      id="location"
+      data-aos="zoom-in-left"
+      data-aos-easing="linear"
+      data-aos-duration="1000"
+    >
       <img src={shape1} alt="shape 1" className="section__img__one" />
       <img src={shape2} alt="shape 2" className="section__img__two" />
       <img src={shape3} alt="shape 3" className="section__img__three" />

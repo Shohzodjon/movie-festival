@@ -45,7 +45,7 @@ const ActiorsSection = () => {
     },
   ];
   return (
-    <section className="actiors__section">
+    <section className="actiors__section" id="actiors">
       <img src={shape1} alt="shape 1" className="section__img__one" />
       <img src={shape2} alt="shape 2" className="section__img__two" />
       <img src={shape3} alt="shape 3" className="section__img__three" />

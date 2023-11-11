@@ -2,8 +2,8 @@
   background: #181818;
   padding: 14rem 0;
   position: relative;
-  width: 100%;
-  overflow-x: hidden;
+  /* width: 100%; */
+  /* overflow-x: hidden; */
 }
 .contact__section .container {
   position: relative;
@@ -12,6 +12,8 @@
 
 .footer {
   margin-top: 64px;
+}
+.footer__flex {
   display: flex;
   justify-content: space-between;
 }
@@ -63,6 +65,11 @@
     flex-direction: column;
     gap: 40px;
   }
+  .footer__flex {
+    flex-direction: column;
+    gap: 40px;
+  }
+
   .footer__list h5 {
     font-size: 18px;
     line-height: 24px;
@@ -95,9 +102,12 @@
   }
   .footer {
     margin-top: 40px;
+  }
+  .footer__flex {
     flex-direction: column;
     gap: 40px;
   }
+
   .footer__list h5 {
     font-size: 18px;
     line-height: 24px;
@@ -129,6 +139,12 @@
     justify-content: flex-start;
     flex-wrap: wrap;
   }
+
+  .footer__flex {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
   .footer__list {
     width: 33%;
   }
@@ -160,9 +176,12 @@
   }
   .footer {
     margin-top: 50px;
+  }
+  .footer__flex {
     justify-content: flex-start;
     flex-wrap: wrap;
   }
+
   .footer__list {
     width: 33%;
   }

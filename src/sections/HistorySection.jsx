@@ -8,7 +8,7 @@ import "../assets/styles/history-section.css";
 const HistorySection = () => {
   const data = [img, img, img, img, img, img, img, img, img];
   return (
-    <section className="history__section">
+    <section className="history__section" id="history">
       <div className="container">
         <div className="history__section__flex">
           <SectionTitle title="История" />

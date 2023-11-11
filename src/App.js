@@ -14,7 +14,13 @@ import RefereeSection from "./sections/RefereeSection";
 import LocationSection from "./sections/LocationSection";
 import ClientSection from "./sections/ClientSection";
 import ContactSection from "./sections/ContactSection";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 function App() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <section className="app__component">
       <Navbar />
